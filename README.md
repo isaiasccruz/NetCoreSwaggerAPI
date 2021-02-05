@@ -1,5 +1,5 @@
 # NetCoreSwaggerAPI
-Exemplo de uma API REST usando o Swagger da OpenAPI que faz algumas operações matemáticas simples e está pronta para rodar em container.
+Exemplo de uma API RESTful usando o Swagger da OpenAPI que faz algumas operações matemáticas simples e está pronta para rodar em container.
 O deploy da aplicação foi feito em testes em um ambiente Docker em Ubuntu 18.04.
 
 O Dockerfile já está preparado pela solution e a imagem é construida com sucesso:
@@ -19,3 +19,6 @@ netcoreswaggerapi   v1        de3f3ce49630   21 seconds ago   208MB
 O projeto todo foi desenvolvido no VisualStudio 2019.
 
 Para rodar o projeto caso não seja feito via deploy, voce pode publicar no modo tradicional em um Windows Server com IIS ou apenas rodar a aplicação em Debug no VisualStudio
+
+##Edit 05/02/2020 Criação de uma aplicação console com menu para consumir todas os métodos da API
+A aplicação foi adicionada a solution
