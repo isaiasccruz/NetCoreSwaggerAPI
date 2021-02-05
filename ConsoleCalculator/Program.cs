@@ -35,10 +35,14 @@ namespace ConsoleCalculator
                 Console.Clear();
 
 
-                while (resul > 0 && resul < 7)
+                while (resul < 7)
                 {
                     RequestNetCoreSwaggerAPI request = new RequestNetCoreSwaggerAPI();
 
+                    if (resul == 0)
+                    {
+                        Environment.Exit(0);
+                    }
                     if (resul == 1)
                     {
                         num1 = double.Parse(ValidaDigito("Digite o primeiro numero: "));
