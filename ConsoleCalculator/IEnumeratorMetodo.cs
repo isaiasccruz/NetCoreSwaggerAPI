@@ -6,7 +6,8 @@
         Subtracao = 2,
         Divisao = 3,
         Multiplicacao = 4,
-        Divisores = 5,
-        DivisoresPrimos = 6
+        NumeroPrimo = 5,
+        Divisores = 6,
+        DivisoresPrimos = 7
     }
 }

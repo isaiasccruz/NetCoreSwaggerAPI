@@ -88,6 +88,25 @@ namespace APIProcessadoraDeNumeros.Controllers
             }
         }
 
+        [HttpGet("api/NumeroPrimo/{num1}")]
+        public async Task<ActionResult<RespostaPadrao>> GetNumeriPrimoAsync(int num1)
+        {
+            IOperacoesMatematicas operacoesMatematicas = new OperacoesMatematicasRepository();
+
+            try
+            {
+                return await operacoesMatematicas.RetornaSeNumeroEhPrimo(num1);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(
+                        new
+                        {
+                            Mensagem = ex.Message
+                        });
+            }
+        }
+
         [HttpGet("api/Divisores/{num1}")]
         public async Task<ActionResult<RespostaPadrao>> GetDivisoresAsync(int num1)
         {

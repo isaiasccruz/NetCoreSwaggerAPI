@@ -27,15 +27,16 @@ namespace ConsoleCalculator
                 Console.WriteLine("Para subtrair digite 2");
                 Console.WriteLine("Para dividir digite 3");
                 Console.WriteLine("Para multiplicar digite 4");
-                Console.WriteLine("Para calcular os divisores digite 5");
-                Console.WriteLine("Para calcular os divisores primos digite 6");
-                Console.WriteLine("Para sair digite 7");
+                Console.WriteLine("Para verificar número primo digite 5");
+                Console.WriteLine("Para calcular os divisores digite 6");
+                Console.WriteLine("Para calcular os divisores primos digite 7");
+                Console.WriteLine("Para sair digite 0");
                 Console.Write("\nDigite o numero correspondente à opção: ");
                 resul = int.Parse(Console.ReadLine());
                 Console.Clear();
 
 
-                while (resul < 7)
+                while (resul < 8)
                 {
                     RequestNetCoreSwaggerAPI request = new RequestNetCoreSwaggerAPI();
 
@@ -76,6 +77,13 @@ namespace ConsoleCalculator
                         break;
                     }
                     if (resul == 5)
+                    {
+                        num1 = double.Parse(ValidaDigito("Digite o numero: "));
+
+                        Console.WriteLine(request.ExecutaRequestAPIProcessadoraDeNumeros(EnumeratorMetodo.NumeroPrimo.ToString(), num1, null));
+                        break;
+                    }
+                    if (resul == 6)
                     {
                         num1 = double.Parse(ValidaDigito("Digite o numero: "));
 
