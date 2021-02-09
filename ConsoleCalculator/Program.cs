@@ -90,7 +90,7 @@ namespace ConsoleCalculator
                         Console.WriteLine(request.ExecutaRequestAPIProcessadoraDeNumeros(EnumeratorMetodo.Divisores.ToString(), num1, null));
                         break;
                     }
-                    if (resul == 6)
+                    if (resul == 7)
                     {
                         num1 = double.Parse(ValidaDigito("Digite o numero: "));
 
